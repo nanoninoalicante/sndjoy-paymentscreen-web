@@ -8,6 +8,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/error',
+      name: 'error',
+      component: () => import('../views/ErrorView.vue')
     }
   ]
 })
